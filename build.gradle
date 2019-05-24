@@ -17,6 +17,9 @@ configurations {
 
 repositories {
     mavenCentral()
+    maven {
+        url "http://jcenter.bintray.com"
+    }
 }
 
 dependencies {
@@ -25,4 +28,5 @@ dependencies {
     runtimeOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compile ("com.byteowls:jopencage:1.2.1")
 }
